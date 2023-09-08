@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans-serif;
+}
+
+body{
+    height: 90vh;
+    background-color: black;
+    background-image: url(../Images/cannabis-4271767_1920.jpg);
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    
+}
+#logo{
+    filter: invert(100%)
+}
+
+#logo img{
+    height: 175px;
+    width: 200px;
+   margin-top: 100px;
+   left: 0;
+   top:0;
+    
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover{
+    color: orangered;
+    font-size: 1.04rem;
+    font-weight: bold;
+    text-shadow: 0px 1px;
+}
+
+/* HEADER  */
+header{
+   position: relative;
+    padding: 0.2rem;
+}
+
+/* navbar */
+#navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    width: 25%;
+    font-size: 1.3rem;
+    padding:0px 18px;
+    opacity: 0.75;
+}
+#navbar ul li a:hover{
+    font-size: 1.5rem;
+    text-decoration: dotted;
+    color: orangered;
+    
+
+}
+
+#navbar ul{
+    display: flex;
+    font-weight: bold;
+}
+
+#navbar .toogle_btn{
+    color: white;
+    font-size: 1.3rem;
+    cursor:pointer ;
+    display: none;
+}
+
+.action-btn{
+    background-color: rgb(250, 96, 40);
+    color: black;
+    border-radius: 13px;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0px 110px;
+    border: 1px solid rgb(88, 171, 207);
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+
+
+}
+.action-btn:hover{
+    scale: 1.10;
+    color: white;
+    box-shadow: 5px 3px 3px rgb(128, 155, 104);
+
+}
+
+.action-btn:active{
+    scale: 0.95;
+}
+
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 0rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 260px;
+}
+.dropdown_menu li{
+    padding: 0.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dropdown_menu .action-btn{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* DROPDOWN MENU  */
+
+/* HERO  */
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-top: 22rem;
+}
+
+/* RESPONSIVE DESIGN  */
+
+@media(max-width: 1202px){
+    #navbar li ,
+    #navbar .action-btn{
+        display: none;
+    }
+
+    #navbar .toogle_btn{
+        display: block;
+        
+    }
+    .dropdown_menu{
+        display: block;
+        margin-right: 0px;
+    }
+}
+@media(max-width: 448px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+        right: 2rem;
+        margin-top: 5rem;
+    }
+
+    #logo img{
+        display: block;
+        margin-left: 70px;
+        width: 77%;
+
+    }
+}
