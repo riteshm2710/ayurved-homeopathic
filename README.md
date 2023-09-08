@@ -20,14 +20,13 @@
             <li class="item"><a href="#branch-section"> BRANCHES</a><li>
             <li class="item"><a href="#contact">CONTACT</a></li>
             
-        </ul>
+ </ul>
         <a href="#" class="action-btn">GET STARTED</a>
         <div class="toogle_btn">
             <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
-
-    <div class="dropdown_menu ">
+        <div class="dropdown_menu ">
         <li class="item"><a href="#home">HOME</a></li>
         <li class="item"><a href="#about-section">ABOUT</a></li>
         <li class="item"><a href="#services-container">SERVICES</a><li>
@@ -35,6 +34,9 @@
         <li class="item"><a href="#contact">CONTACT</a></li>
         <li><a href="#" class="action-btn">GET STARTED</a></li>
     </div>
+</header>
+
+</header>
 </header>
 
 <main>
